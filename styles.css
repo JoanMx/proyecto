@@ -1,0 +1,236 @@
+.topheader {
+  position: fixed;
+  background-color: white; /*color de fondo*/
+  width: 100%; /*ancho*/
+  display: flex; /*pantalla: flexionar*/
+  align-items: center; /*alinear elementos*/
+  justify-content: space-between;
+  padding: 20px; /*relleno*/
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  /*dentro de la etiqueta por eso li a*/
+  text-decoration: none;
+  color: blue;
+  display: block;
+  padding: 15px 20px;
+}
+
+.Menu-Vertical {
+  display: none;
+  padding: 0;
+  position: absolute;
+  list-style: none;
+  width: 200px;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+/*SECCION BANCA*/
+.seccion-banca {
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-banca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*VA A PREGUNTAR PARA QUE SIRVE EL GAP*/
+  gap: 40px;
+}
+.div-banca-texto {
+  flex: 1; 
+}
+.div-banca-texto h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+.div-banca-texto p {
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+.div-banca-img {
+  flex: 1;
+}
+.div-banca-img img {
+  width: 100%;
+  max-width: 500px;
+}
+/*SECCION PROMO*/
+.seccion-promo {
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-promo-texto {
+  flex: 1;
+}
+.div-promo-texto h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+.div-promo-texto p {
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+.div-prom-video {
+  flex: 1;
+}
+.div-prom-video iframe {
+  width: 100%;
+  max-width: 500px;
+}
+/*Formulario*/
+.seccion-formulario {
+  background-color: brown;
+  padding: 60px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40 px;
+}
+.div-cont-formulario {
+  background-color: rgb(200, 200, 226);
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 0.625 px;
+  width:100%;
+  max-width:31.25rem;
+  
+}
+.campo{
+  background-color: rgb(175, 105, 105);
+  padding: 15px;
+  border: 2px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+ 
+}
+.formulario label{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: blue;
+}
+/*input:text-select*/
+.formulario input[type="text"], .formulario select{
+  width: 100%;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.lista-checkbox,.lista-radio{
+  list-style: none;
+  padding: 10px;
+  margin; 0;
+  border: 1px;
+  background-color: white;
+}
+.formulario button{
+  background-color: green;
+  color: black;
+  padding:10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}

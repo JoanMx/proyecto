@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <!--Todo se hace en body, apertura y cerradura-->
+  <body>
+    <!--Menu Horizontal-->
+    <nav class="topheader">
+      <a href="" class="img">
+        <img height="50px" width="200" src="SHOPEAS.PNG" alt="" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Banca Virtual</a></li>
+        <li>
+          <a href="">Categorias</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Ropa</a></li>
+            <li><a href="">Electrónica</a></li>
+            <li><a href="">Calzado</a></li>
+            <li><a href="">Accesorios</a></li>
+          </ul>
+        </li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Ofertas</a></li>
+        <li><a href="">Ayuda</a></li>
+      </ul>
+    </nav>
+    <!--SECCION BANCA-->
+    <section class="seccion-banca">
+      <div class="div-gral-banca">
+        <div class="div-banca-texto">
+          <h2>Seccion Banca</h2>
+          <p>
+            La banca es una industria que provee servicios financieros a
+            individuos, empresas y gobiernos, incluyendo préstamos, depósitos y
+            gestión de inversiones.
+          </p>
+          <p>
+            En otras palabras, la banca representa una actividad económica que
+            se dedica a la intermediación financiera presente prácticamente en
+            todos los países del mundo y se encarga de recibir, guardar y
+            prestar dinero, así como ofrecer una amplia gama de servicios
+            financieros y de inversión a personas y empresas. Es decir, su
+            objetivo principal es administrar el dinero y los recursos
+            financieros de sus clientes.
+          </p>
+        </div>
+        <div class="div-banca-img">
+          <img src="descuentos.PNG" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION PROMOCIONES-->
+    <section class="seccion-promo">
+      <div class="div-gral-promo">
+        <div class="div-promo-texto">
+          <h2>Seccion Promociones</h2>
+          <p>
+            Se les considera promociones a una acción realizada, generalmente
+            por el equipo de ventas, para incentivar a los clientes potenciales
+            a comprar alguno de sus productos o servicios a través de rebajas de
+            precio o regalando algún producto que “agregue valor a la compra”.
+          </p>
+          <p>
+            La promoción es una estrategia de comunicación que las empresas
+            utilizan para informar, persuadir y recordar al público sobre sus
+            productos o servicios, con el objetivo de incrementar las ventas y
+            mejorar la imagen de marca. Se utiliza en diversos ámbitos, como el
+            marketing, y puede referirse a actividades comerciales como ofertas
+            y descuentos, o al ascenso de una persona en su trabajo
+          </p>
+        </div>
+        <div class="div-prom-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Rs2f23P0974?si=a0P8bo1MMH_8Y-Yw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registros</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario about">
+          <!--input/label-->
+          <div class="campo">
+            <label for="nombre">Nombres Apellidos</label>
+            <input type="text" id="nombre" name="nambre" placeholder="Ingrese sus nombres"></input>
+          </div>
+          <!--Lista Desplegable-->
+          <div class="campo">
+            <label for="nombre">Productos:</label>
+            <select id="productos"name="productos">
+              <option value="">seleccione un producto</option>
+              <option value="">Ropa</option>
+              <option value="">Electrónica</option>
+              <option value="">Calzado</option>
+              <option value="">Accesorios</option>
+            </select>
+          </div>
+          <!--checkbox-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li><label><input type="checkbox"name="intereses" value="Tecnologia">Tecnologia</label></li>
+              <li><label><input type="checkbox"name="intereses" value="Ropa">Ropa</label></li>
+              <li><label><input type="checkbox"name="intereses" value="Coleccionabkes">Coleccionables</label></li>
+            </ul>
+          </div>
+          <!--radio-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio"name="Sexo" value="M">Masculino</label></li>
+              <li><label><input type="radio"name="Sexo" value="F">Femenino</label></li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </div>
+        </form>
+     </section>
+          <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="SHOPEAS.PNG"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SHOPEAS</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
