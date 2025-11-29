@@ -5,7 +5,7 @@
   display: flex; /*pantalla: flexionar*/
   align-items: center; /*alinear elementos*/
   justify-content: space-between;
-  padding: 20px; /*relleno*/
+  padding: 0 1.25rem; /*relleno*/
 }
 
 .Menu-Horizontal {
@@ -53,7 +53,7 @@
   gap: 40px;
 }
 .div-banca-texto {
-  flex: 1; 
+  flex: 1;
 }
 .div-banca-texto h2 {
   color: blue;
@@ -117,43 +117,43 @@
   padding: 30px;
   border: 2px solid black;
   border-radius: 0.625 px;
-  width:100%;
-  max-width:31.25rem;
-  
+  width: 100%;
+  max-width: 31.25rem;
 }
-.campo{
+.campo {
   background-color: rgb(175, 105, 105);
   padding: 15px;
   border: 2px;
   border-radius: 5px;
   margin-bottom: 15px;
- 
 }
-.formulario label{
+.formulario label {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
   color: blue;
 }
 /*input:text-select*/
-.formulario input[type="text"], .formulario select{
+.formulario input[type="text"],
+.formulario select {
   width: 100%;
   padding: 6px;
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
 }
-.lista-checkbox,.lista-radio{
+.lista-checkbox,
+.lista-radio {
   list-style: none;
   padding: 10px;
-  margin; 0;
+  margin: 0;
   border: 1px;
   background-color: white;
 }
-.formulario button{
+.formulario button {
   background-color: green;
   color: black;
-  padding:10px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
